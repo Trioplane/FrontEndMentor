@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | NFT preview card component</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    @media (max-width: 400px) {
+      .attribution {
+        display: none;
+      }
+
+      .card {
+        transform: translateY(-5%) scale(.8);
+      }
+    }
+
+    .attribution {
+      position: absolute;
+      bottom: 0;
+      font-size: 10px;
+      text-align: center;
+      color: var(--cyan);
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <img src="./images/image-equilibrium.jpg" alt="NFT" class="nft">
+    <div class="nft-hover"></div>
+    </img>
+    <span class="card-title">Equilibrium #3429</span>
+    <span class="card-text">Our Equilibrium collection promotes balance and calm.</span>
+    <div class="card-info">
+      <div class="nft-price-wrapper">
+        <svg width="11" height="18" xmlns="http://www.w3.org/2000/svg">
+          <path class="eth-svg"
+            d="M11 10.216 5.5 18 0 10.216l5.5 3.263 5.5-3.262ZM5.5 0l5.496 9.169L5.5 12.43 0 9.17 5.5 0Z"
+            fill="#00FFF8" />
+        </svg>
+        <span class="nft-price">0.041 ETH</span>
+      </div>
+      <div class="time-wrapper">
+        <svg width="17" height="17" xmlns="http://www.w3.org/2000/svg">
+          <path class="clock-svg"
+            d="M8.305 2.007a6.667 6.667 0 1 0 0 13.334 6.667 6.667 0 0 0 0-13.334Zm2.667 7.334H8.305a.667.667 0 0 1-.667-.667V6.007a.667.667 0 0 1 1.334 0v2h2a.667.667 0 0 1 0 1.334Z"
+            fill="#8BACD9" />
+        </svg>
+        <span class="time-left">3 days left</span>
+      </div>
+    </div>
+    <hr class="hr" left="0">
+    <div class="creator-wrapper">
+      <img src="./images/image-avatar.png" alt="Profile Picture" class="creator">
+      <span class="left-text">Creation of</span>
+      <span class="right-text">Jules Wyvern</span>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/Trioplane" target="_blank">trplnr</a>.
+  </div>
+</body>
+
+</html>
